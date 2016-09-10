@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>My App</title>
+    <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.css">
+</head>
+<body>
+<h1>Express</h1>
+<p>Express App: <b>Err...</b></p>
+<%= new Date() %>
+<ul>
+    <% for (var i = 0; i < items.length; i++) { %>
+    <li><%= items[i].desc %></li>
+    <% } %>
+</ul>
+
+<form action="/add" method="post">
+    <input type="text" name="newItem">
+    <input type="submit">
+
+</form>
+<script src="jquery/dist/jquery.js"></script>
+<script src="bootstrap/dist/js/bootstrap.js"></script>
+
+</body>
+</html>
